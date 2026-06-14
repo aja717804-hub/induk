@@ -2021,6 +2021,14 @@
                                             <input type="text" required placeholder="Contoh: 0123456781" value={studentForm.nisn} onChange={(e) => setStudentForm({ ...studentForm, nisn: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
                                         </div>
                                         <div>
+                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Nama Ayah</label>
+                                            <input type="text" placeholder="Contoh: Zahran" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
+                                        </div>
+                                        <div>
+                                            <label className="block font-bold text-slete-500 mb-1 uppercase tracking-wider">Nama Ibu</label>
+                                            <input type="text" placeholder="Contoh: Yaya" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg outline-none bg-white">
+                                        </div>
+                                        <div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Tempat Lahir</label>
                                             <input type="text" placeholder="Contoh: Karawang" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
                                         </div>
@@ -2034,14 +2042,6 @@
                                                 <option value="Laki-laki">Laki-laki</option>
                                                 <option value="Perempuan">Perempuan</option>
                                             </select>
-                                        </div>
-                                        </div>
-                                            <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Nama Ayah</label>
-                                            <input type="text" placeholder="Contoh: Zahran" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
-                                        </div>
-                                        </div>
-                                            <label className="block font-bold text-slete-500 mb-1 uppercase tracking-wider">Nama Ibu</label>
-                                            <input type="text" placeholder="Contoh: Yaya" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg outline-none bg-white">
                                         </div>
                                         </div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Kelas Terdaftar</label>
