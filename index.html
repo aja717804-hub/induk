@@ -1365,6 +1365,8 @@
                                                         <th className="py-3 px-4">Nama Alumni</th>
                                                         <th className="py-3 px-4">NIS / NISN</th>
                                                         <th className="py-3 px-4">Tanggal Lulus</th>
+                                                        <th className="py-3 px-4">No. KK</th>
+                                                        <th className="py-3 px-4">No. NIK</th>
                                                         <th className="py-3 px-4">No. Ijazah Resmi</th>
                                                         <th className="py-3 px-4 text-center">Rata-Rata Ujian</th>
                                                         <th className="py-3 px-4 text-center">Aksi</th>
@@ -2022,20 +2024,20 @@
                                             <input type="text" required placeholder="Contoh: 0123456781" value={studentForm.nisn} onChange={(e) => setStudentForm({ ...studentForm, nisn: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
                                         </div>
                                         <div>
-                                            <label className="block font-bold text-slate-500 mb-1 uppercase tracking-winder">Nama Ayah</label>
-                                            <input type="text" required placeholder="Contoh: Zahran" value={studentForm.ayah} onChange={(e) => setStudentForm({ ...studentForm, ayah: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
-                                        </div>
-                                        <div>
-                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-winder">Nama Ibu</label>
-                                            <input type="text" required placeholder="Contoh: Yaya" value={studentForm.ibu} onChange={(e) => setStudentForm({ ...studentForm, ayah: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
-                                        </div>
-                                        <div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Tempat Lahir</label>
                                             <input type="text" placeholder="Contoh: Karawang" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
                                         </div>
                                         <div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Tanggal Lahir</label>
                                             <input type="date" value={studentForm.dob} onChange={(e) => setStudentForm({ ...studentForm, dob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
+                                        </div>
+                                        <div>
+                                            <label className="block font-bold text-slate-500 mb-1 uppercase tracking-winder">Nama Ayah</label>
+                                            <input type="text" required placeholder="Contoh: Zahran" value={studentForm.ayah} onChange={(e) => setStudentForm({ ...studentForm, ayah: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
+                                        </div>
+                                        <div>
+                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-winder">Nama Ibu</label>
+                                            <input type="text" required placeholder="Contoh: Yaya" value={studentForm.ibu} onChange={(e) => setStudentForm({ ...studentForm, ayah: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
                                         </div>
                                         <div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Jenis Kelamin</label>
